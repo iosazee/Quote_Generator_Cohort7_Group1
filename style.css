@@ -1,0 +1,36 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: aquamarine;
+}
+
+
+
+h1,h2 {
+  text-align: center;  
+}
+
+.img1 {
+    width: 50%;
+    height: 50%;
+    margin-left: 300px;
+}
+
+.backgroundImg_button_container {
+    background-image: url(Assets/dandelion-field.jpg);
+    background-position: center;
+}
+
+p {
+    color: blueviolet;
+    border: black dotted 3px;
+    background-color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 550px;
+}

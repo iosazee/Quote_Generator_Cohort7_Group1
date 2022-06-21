@@ -1,18 +1,13 @@
 body {
     font-family: 'Dancing Script', cursive;
     background-color: aquamarine;
+    text-align: center;
 }
 
-
-
-h1,h2 {
-  text-align: center;  
-}
 
 .img1 {
     width: 50%;
     height: 50%;
-    margin-left: 300px;
 }
 
 .backgroundImg_button_container {
@@ -29,8 +24,17 @@ p {
 }
 
 button {
-    width: 100px;
-    height: 50px;
-    margin-top: 50px;
-    margin-left: 550px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px;
+}
+
+#quote_button {
+    background-color: black;
+}
+
+#share_button {
+    background-color: red;
 }

@@ -1,16 +1,10 @@
 //Pseudocode: What we need to do. To build a random quote generator, we need multiple quotes.
 // We need multiple quotes stored as strings in an array as shown below:
-var quotes = [
-    "No one is born hating another person because of the color of his skin, or his background, or his religion.People must learn to hate, and if they can learn to hate, they can be taught to love, for love comes more naturally to the human heart than hate. -Nelson Mandela",
-    "Education is the most powerful weapon which you can use to change the world. -Nelson Mandela",
-    "It always seems impossible until it's done. -Nelson Mandela",
-    "If you talk to a man in a language he understands, that goes to his head. If you talk to him in his language, that goes to his heart. -Nelson Mandela"
-    ]
-    
+var quotes =[{"_id":"5eb17aadb69dc744b4e70d2e","quoteText":"All diseases run into one, old age.","quoteAuthor":"Ralph Waldo Emerson","quoteGenre":"age","__v":0},{"_id":"5eb17aadb69dc744b4e70d36","quoteText":"Alas, after a certain age every man is responsible for his face.","quoteAuthor":"Albert Camus","quoteGenre":"age","__v":0},{"_id":"5eb17aadb69dc744b4e70d44","quoteText":"When grace is joined with wrinkles, it is adorable. There is an unspeakable dawn in happy old age.","quoteAuthor":"Victor Hugo","quoteGenre":"age","__v":0},{"_id":"5eb17aadb69dc744b4e70d48","quoteText":"Age is not a particularly interesting subject. Anyone can get old. All you have to do is live long enough.","quoteAuthor":"Don Marquis","quoteGenre":"age","__v":0},{"_id":"5eb17aadb69dc744b4e70d5e","quoteText":"My notion of a wife at 40 is that a man should be able to change her, like a bank note, for two 20s.","quoteAuthor":"Warren Beatty","quoteGenre":"age","__v":0},{"_id":"5eb17aadb69dc744b4e70d65","quoteText":"Aging seems to be the only available way to live a long life.","quoteAuthor":"Kitty O'Neill Collins","quoteGenre":"age","__v":0},{"_id":"5eb17aadb69dc744b4e70d6b","quoteText":"You know you're getting old when all the names in your black book have M. D. after them.","quoteAuthor":"Harrison Ford","quoteGenre":"age","__v":0},{"_id":"5eb17aadb69dc744b4e70d78","quoteText":"Middle age is youth without levity, and age without decay.","quoteAuthor":"Doris Day","quoteGenre":"age","__v":0},{"_id":"5eb17aadb69dc744b4e70d7d","quoteText":"The answer to old age is to keep one's mind busy and to go on with one's life as if it were interminable. I always admired Chekhov for building a new house when he was dying of tuberculosis.","quoteAuthor":"Leon Edel","quoteGenre":"age","__v":0},{"_id":"5eb17aadb69dc744b4e70d86","quoteText":"Those who love deeply never grow old they may die of old age, but they die young.","quoteAuthor":"Dorothy Canfield Fisher","quoteGenre":"age","__v":0}]
     
 //Each time the generate random quote button in the html file gets pressed, the function, newQuote needs to be called.
 function newQuote() {
     //this function needs to generate a random whole number, when called. To do that, we use the math.floor method as follows
     var randomNumber = Math.floor(Math.random() * (quotes.length));
-    document.getElementById("quoteParagraph").innerHTML = quotes[randomNumber];
+    document.getElementById("quoteParagraph").innerHTML = quotes[randomNumber].quoteText;
 }
